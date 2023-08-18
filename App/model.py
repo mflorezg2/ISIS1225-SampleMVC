@@ -110,7 +110,7 @@ def addBookTags(catalog, booktagsfile):
     book_tags = catalog.get("Book_tags")
     book_tags = lt.newList(datastructure="SINGLE_LINKED",
                            filename=booktagsfile)
-    catalog.update({"Book_tags": book_tags})
+    catalog.update({"book_tags": book_tags})
     return catalog
     pass
 
